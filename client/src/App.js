@@ -19,7 +19,7 @@ const App = () => {
 
   // UserData
   useEffect(() => {
-    const newSocket = io("wss://hackasol.onrender.com/");
+    const newSocket = io("https://devclash.onrender.com");
     const checkUserData = () => {
       try {
         const userData = JSON.parse(localStorage.getItem("user")) || null;
